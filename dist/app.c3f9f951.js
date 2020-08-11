@@ -5402,6 +5402,10 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
           from.remove();
           done();
         }
+      }).fromTo(to.children[0], 2, {
+        opacity: 0
+      }, {
+        opacity: 1
       });
     }
   }, {
