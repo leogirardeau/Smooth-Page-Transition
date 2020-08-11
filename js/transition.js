@@ -2,7 +2,7 @@ import Highway from '@dogstudio/highway';
 // getting the specific 'TimeLineLite' function from gsap.js document I downloaded thanks to node and gsap package
 import { TimelineLite } from 'gsap/dist/gsap';
 
-
+//Fade animation 
 class Fade extends Highway.Transition {
     in({ from, to, done }) {
         const t1 = new TimelineLite();
@@ -12,6 +12,8 @@ class Fade extends Highway.Transition {
             { height: '2vh' },
             {
                 height: '90vh', top: '10%', onComplete: function () {
+                    //remove the container so they don't stack
+                    from.remove();
                     done();
                 }
             }

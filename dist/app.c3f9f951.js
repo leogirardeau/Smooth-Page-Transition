@@ -5368,6 +5368,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+//Fade animation 
 var Fade = /*#__PURE__*/function (_Highway$Transition) {
   _inherits(Fade, _Highway$Transition);
 
@@ -5397,6 +5398,8 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
         height: '90vh',
         top: '10%',
         onComplete: function onComplete() {
+          //remove the container so they don't stack
+          from.remove();
           done();
         }
       });
