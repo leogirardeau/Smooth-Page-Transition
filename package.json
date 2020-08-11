@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/leogirardeau/Smooth-Page-Transition/issues"
   },
-  "homepage": "https://github.com/leogirardeau/Smooth-Page-Transition#readme"
+  "homepage": "https://github.com/leogirardeau/Smooth-Page-Transition#readme",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "gsap": "^3.4.2"
+  }
 }
